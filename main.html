@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <style>
+        body {
+    background-image: url('8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;/*6 для темной темы 8 нейт 3 для белой*/
+  }
+  .h1{
+      font-size: 60pt;
+      margin-top: 160px;
+  }
+
+.search {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+}
+.search svg {
+  width: 300px;
+  transform: translate3d(-125px, 0, 0);
+  transition: 0.5s;
+  pointer-events: none;
+}
+.search input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  padding: 10px 55px 10px 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.search input::-moz-selection {
+  background: rgba(0, 0, 0, 0.3);
+}
+.search input::selection {
+  background: rgba(0, 0, 0, 0.3);
+}
+.search input:valid, .search input:focus {
+  cursor: auto;
+}
+.search input:valid + svg, .search input:focus + svg {
+  transform: translate3d(0, 0, 0);
+}
+.search input:focus {
+  cursor: auto;
+  outline: none;
+}
+.search input:focus + svg .path {
+  stroke-dasharray: 961, 363;
+  stroke-dashoffset: -363;
+}
+.search .path {
+  stroke-dasharray: 363, 961;
+  stroke-dashoffset: 0;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 10;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  transition: 0.5s;
+}
+a {
+  color: #18272f;
+  position: relative;
+  text-decoration: none;
+  font-size: 30pt;
+  display: inline-block;
+  margin: 100px;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #18272f;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* Presentational Styles */
+.body1 {
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  height: 100vh;
+  place-items: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+.sidenav {
+  position: fixed;
+  width: 280px;
+  height: 100%;
+  background-color: #1E2027;
+}
+.sidenav .main-buttons {
+  list-style-type: none;
+  margin: 64px 0;
+  padding: 0;
+  color: #fff;
+}
+.sidenav .main-buttons li {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.sidenav .main-buttons > li {
+  padding: 16px 52px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sidenav .main-buttons > li .fa {
+  position: absolute;
+  left: 12px;
+  color: #414655;
+}
+.sidenav .main-buttons > li:hover, .sidenav .main-buttons > li:active, .sidenav .main-buttons > li:focus {
+  background-color: #292c35;
+  cursor: pointer;
+}
+.sidenav .main-buttons > li:hover .hidden, .sidenav .main-buttons > li:active .hidden, .sidenav .main-buttons > li:focus .hidden {
+  width: 228px;
+}
+
+.hidden {
+  width: 0;
+  height: 100%;
+  padding: 64px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #292c35;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.hidden li {
+  padding: 16px 24px;
+}
+.hidden li:hover, .hidden li:active, .hidden li:focus {
+  background-color: #323541;
+}
+
+body {
+  background-color: #caccd6;
+  line-height: 30px;
+}
+
+html, body {
+  height: 100%;
+}
+
+</style>
+  </head>
+  <body>
+   
+   
+   
+   <center><div class="h1" >KOREAN  neo classic</div></center>
+   <br>
+   <center><H1>NEW COLLECTION</H1></center>
+
+      
+       
+       <section>
+        <div class="search">
+  <input type="search" autocomplete="off" required/>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 1000 150">
+    <path class="path" fill="none" d="M924.4 85.2c-19.5 19.5-50.8 19.7-70.3 0-19.3-19.4-19.3-51 .3-70.6 19.5-19.5 51-19.4 70.6 0 19.3 19.7 19.3 50.8-.5 70.6l35.4 35.3H0"/>
+  </svg>
+</div>
+       <center><a href="file:///E:/vinogradova/%D1%81%D0%B0%D0%B9%D1%82%20%D0%BF%D0%BE%20%D1%82%D0%B7/dark.html" target="_blank">dark</a>
+       <a href="file:///E:/vinogradova/%D1%81%D0%B0%D0%B9%D1%82%20%D0%BF%D0%BE%20%D1%82%D0%B7/light.html" target="_blank">light</a></center>
+       </section>
+    
+          </div>
+      </div>
+  </body>
+</html>
